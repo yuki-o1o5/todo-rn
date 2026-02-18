@@ -22,7 +22,7 @@ export function ThemedView({
       <View
         style={[
           {
-            backgroundColor: colors.backgroundPrimary,
+            backgroundColor: colors.background,
             paddingTop: top,
             paddingBottom: skipBottomInset ? 0 : bottom,
             flex: 1,
@@ -36,7 +36,7 @@ export function ThemedView({
 
   return (
     <View
-      style={[{ backgroundColor: colors.backgroundPrimary }, style]}
+      style={[{ backgroundColor: colors.background }, style]}
       {...otherProps}
     />
   );
