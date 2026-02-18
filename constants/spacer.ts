@@ -1,0 +1,17 @@
+export const SPACER = {
+  space0: 0,
+  space2: 2,
+  space4: 4,
+  space8: 8,
+  space12: 12,
+  space16: 16,
+  space20: 20,
+  space24: 24,
+  space28: 28,
+  space32: 32,
+  space36: 36,
+  space40: 40,
+  space48: 48,
+  space52: 52,
+  space64: 64,
+};
