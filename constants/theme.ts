@@ -10,22 +10,68 @@ const tintColorDark = '#fff';
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
+    white: 'white',
+    gray: 'gray',
+
+    warning: 'red',
+    primary: '#72BF78',
+    secondary: '#A0D683',
+    tertiary: '#D3EE98',
+    accent: '#FEFF9F',
+
+    textPrimary: '#1F1F1F',
+    textSecondary: '#355130',
+    textTertiary: '#D1D1D1',
+    textLink: '#007BFF',
+
+    backgroundPrimary: '#EAEEE5',
+    backgroundOverlay: 'rgba(0, 0, 0, 0.6)',
+
+    buttonPrimary: '#007BFF',
+
+    buttonTextPrimary: '#fff',
     tint: tintColorLight,
+
     icon: '#687076',
+    plusIcon: '#fff',
+    plusIconBackground: '#687076',
     tabIconDefault: '#687076',
     tabIconSelected: tintColorLight,
+    iconButton: '#000',
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
+    white: 'white',
+    gray: 'gray',
+
+    warning: 'red',
+    primary: '#72BF78',
+    secondary: '#A0D683',
+    tertiary: '#D3EE98',
+    accent: '#FEFF9F',
+
+    textPrimary: '#1F1F1F',
+    textSecondary: '#355130',
+    textTertiary: '#D1D1D1',
+    textLink: '#007BFF',
+
+    backgroundPrimary: '#EAEEE5',
+    backgroundOverlay: 'rgba(0, 0, 0, 0.6)',
+
+    buttonPrimary: '#007BFF',
+
+    buttonTextPrimary: '#fff',
     tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
+
+    icon: '#687076',
+    plusIcon: '#fff',
+    plusIconBackground: '#687076',
+    tabIconDefault: '#687076',
     tabIconSelected: tintColorDark,
+    iconButton: '#000',
   },
 };
+
+export type ColorsType = keyof typeof Colors.light & keyof typeof Colors.dark;
 
 export const Fonts = Platform.select({
   ios: {
@@ -47,7 +93,8 @@ export const Fonts = Platform.select({
   web: {
     sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
     serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
+    rounded:
+      "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });
