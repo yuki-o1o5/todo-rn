@@ -20,11 +20,34 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <KeyboardProvider>
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack initialRouteName="index">
+          <Stack.Screen
+            name="index"
+            options={{
+              headerShown: true,
+              headerTitle: 'Home',
+              headerLeft: () => <></>,
+            }}
+          />
+          <Stack.Screen
+            name="(tabs)"
+            options={{
+              headerShown: true,
+              headerTitle: 'TodoRN',
+              headerLeft: () => <></>,
+            }}
+          />
           <Stack.Screen
             name="modal"
             options={{ presentation: 'modal', title: 'Modal' }}
+          />
+          <Stack.Screen
+            name="+not-found"
+            options={{
+              headerShown: true,
+              headerTitle: 'Not Found',
+              headerLeft: () => <></>,
+            }}
           />
         </Stack>
         <StatusBar style="auto" />
