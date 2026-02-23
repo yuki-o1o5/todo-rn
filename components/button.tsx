@@ -3,7 +3,7 @@ import { ThemedText } from './themed-text';
 
 type ButtonProps = {
   label: string;
-  onPress: () => void;
+  onPress?: () => void;
 };
 
 export default function Button({ label, onPress }: ButtonProps) {
